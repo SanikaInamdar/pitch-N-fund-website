@@ -1,0 +1,15 @@
+{
+  "name": "investor-pov",
+  "version": "1.0.0",
+  "description": "This is integration of chartjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinayak",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "chart.js": "^3.7.1"
+  }
+}

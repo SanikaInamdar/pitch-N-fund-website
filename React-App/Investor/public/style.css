@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header #navbarDropdown{
+    color: white;
+}
+
+header #navbarDropdown img{
+    border-radius: 100%;
+}
+
+header #navigation{
+    margin-left: auto;
+    align-items: center;
+}
+
+header #navigation .nav-link{
+    color: white;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+header .dropdown-item:hover{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* Card */
+
+section .card{
+    border: 3px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    width: 25rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section .button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .button-container .button{
+    width: 1.6rem;
+}
+
+section .card .card-body{
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+section .chart-container > div{
+    margin: auto;
+}
+
+section .card .chart-container{
+    align-self: center;
+    width:35%; 
+    max-width:600px;
+}

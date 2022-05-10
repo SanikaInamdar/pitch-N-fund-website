@@ -1,0 +1,111 @@
+/* TEAM */
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+#team-heading {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 800;
+    color: #798b9a;
+}
+
+#team .card {
+    position: relative;
+    width: 20rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px 3px #4682ab;
+    padding: 16px;
+    margin: 56px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team .card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+        0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#team .card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+#team p {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#team .name {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 80px;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+#team .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#team a {
+    margin: 12px 8px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#team a:hover {
+    opacity: 0.5;
+}
+
+#team a i {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+/* Social media colors */
+#team a.github {
+    background-color: black;
+}
+
+#team a.twitter {
+    background-color: #0077b5;
+}
+
+#team a.pinterest {
+    background-color: #EA4335;
+}

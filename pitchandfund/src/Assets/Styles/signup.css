@@ -1,46 +1,57 @@
 #signup_container {
     display: flex;
     flex-direction: column;
+    border: none;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 25rem;
 }
 
 #signup_form {
     width: 25rem;
-    background-color: aliceblue;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 10px;
+    margin: auto;
+    padding: 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
+    box-shadow: 0px 3px 3px 3px hwb(206 75% 19%), -1em 0 3em hsl(203, 12%, 78%);
+    border-radius: 15px;
+}
+
+#signup_form #signup_heading{
+    padding-top: 10px;
+    color: rgb(0, 96, 161);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
 }
 
 #signup_form .signup_hr {
     margin: 0px;
-    height: 20px;
-    background: black;
+    height: 3px;
+    background-color: rgb(255, 184, 42);
     width: 100%;
     opacity: 100%;
 }
 
 #signup_form .signup_label {
     justify-content: left;
-    font-weight: bold;
-    margin: 4px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    margin: 5px;
 }
 
 #signup_form .signup_input {
-    border: 2px solid black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
     border-radius: 5px;
+    margin: 4px;
+    padding: 7px;
     display: block;
+    border: none;
+    box-shadow: inset 1px 1px 1px 1px hsl(203, 12%, 78%);
     width: 85%;
-    margin: 8px;
-    padding: 4px;
-    text-align: center;
 }
 
 #signup_form .signup_user {
@@ -48,12 +59,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
 }
 
 #signup_form .signup_user .signup_user_choice {
+    box-shadow: none;
     width: 10%;
-    height: 32%;
+    height: 40%;
     margin: 0;
     border-radius: 0;
 }
@@ -63,17 +74,17 @@
     width: 100%;
     font-size: 15px;
     font-weight: bold;
-    height: 4px;
     line-height: 0px;
     text-align: center;
+    margin: 4px;
 }
 
 #signup_form #or::before,
 #signup_form #or::after {
     position: absolute;
     width: 45%;
-    height: 4px;
-    background-color: black;
+    height: 3px;
+    background-color: rgb(255, 184, 42);
     content: "";
 }
 
@@ -85,11 +96,23 @@
     right: 0;
 }
 
+#signup_form #invalid-user{
+    color: red;
+    margin: 0;
+}
+
 #signup_form .signup_buttons {
-    margin: 15px;
+    margin: 12px;
+    border: none;
     border-radius: 15px;
-    width: 70%;
+    color: white;
+    width: 80%;
+    background-color: rgb(0, 96, 161);
     border: 2px solid;
+}
+
+#signup_form .signup_buttons:hover {
+    background-color: rgb(255, 184, 42)
 }
 
 /* Media Quary for Mobile */

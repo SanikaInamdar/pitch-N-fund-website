@@ -1,0 +1,120 @@
+#Addprojects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 690px;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+#Addprojects-form {
+    background-color: transparent;
+    box-shadow: 4px 4px 4px 4px hsl(203, 12%, 78%);
+    padding-top: 2%;
+    /* border: 1.5px solid black;  */
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* //border: 2px solid hsl(203, 19%, 86%); */
+
+    border-radius: 2.5%;
+}
+
+.Addprojects-form-labels {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.Addprojects-form-heading {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2%;
+    color: rgb(0, 96, 161);
+    text-decoration-line: underline;
+    text-underline-offset: 4.5px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(255, 184, 42);
+}
+
+.Addprojects-title-input {
+    text-align: center;
+    height: 8%;
+    width: 70%;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    border: 1px solid hsl(205, 14%, 83%);
+    box-shadow: inset 2.5px 2.5px 2.5px hsl(205, 14%, 83%);
+    border-radius: 1%;
+}
+
+.Addprojects-input {
+    text-align: center;
+    height: 8%;
+    border: 1px solid hsl(205, 14%, 83%);
+    box-shadow: inset 2.5px 2.5px 2.5px hsl(205, 14%, 83%);
+    width: 70%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+
+    border-radius: 2.5%;
+}
+
+.Addprojects-description {
+    width: 70%;
+    text-align: center;
+    height: 20%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    border: 1px solid hsl(205, 14%, 83%);
+    box-shadow: inset 2.5px 2.5px 2.5px hsl(205, 14%, 83%);
+    border-radius: 2.5%;
+    margin-bottom: 3px;
+}
+
+textarea {
+    resize: none;
+}
+
+.Addprojects-btn {
+    margin-top: 1%;
+    height: 10%;
+    width: 70%;
+    background-color: rgb(0, 96, 161);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+
+}
+
+.Addprojects-btn:hover {
+    background-color: rgb(255, 184, 42);
+}
+
+@media (max-width: 700px) {
+    #Addprojects-container {
+        width: 100%;
+        /* margin: 0%;
+      padding:0% */
+    }
+
+    #Addprojects-form {
+        width: 90%;
+        height: 80%;
+        padding-bottom: 5%;
+    }
+
+    .Addprojects-description {
+        height: 20%;
+    }
+
+}

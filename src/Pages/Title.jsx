@@ -2,6 +2,7 @@ import React from "react";
 import Business from "../Assets/Images/business.png";
 
 function Title() {
+
     return (
         <section id="title" className="row">
             <div className="col-lg-5 col-md-6 col-sm-12 col-12" id="image-container">
@@ -19,12 +20,15 @@ function Title() {
                     <li>Acknowledging every business potential</li>
                     <li>Reshaping business fundraising</li>
                 </ul>
-                <button
+                <a
                     type="button"
                     className="btn btn-dark btn-lg download-button"
+                    href="https://drive.google.com/file/d/1Ep-XNppGJ9UbftToELL7ATY1NN9uYwLi/view?usp=sharing"
+                    target="_blank" 
+                    rel="noreferrer"
                 >
                     <i className="fa-brands fa-google-play"></i> Download App
-                </button>
+                </a>
             </div>
         </section>
     );

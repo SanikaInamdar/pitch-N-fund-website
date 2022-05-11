@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Layout from "../Components/Layout";
+import axios from "axios";
 
 function SignUp() {
 
@@ -12,11 +13,9 @@ function SignUp() {
 
     const [isValid, setIsValid] = useState(true);
 
-    let name, value;
-
     const onChangehandle = (e) => {
-        name = e.target.name;
-        value = e.target.value;
+        const name = e.target.name;
+        const value = e.target.value;
 
         setCredentials({ ...credentials, [name]: value });
     }
@@ -33,35 +32,17 @@ function SignUp() {
 
     const submitData = async (e) => {
         e.preventDefault();
-        const name = credentials.name;
-        const phone = credentials.phone;
-        const email = credentials.email;
-        const password = credentials.password;
-        let result;
-        if (credentials.usertype === "entrepreneur") {
-            result = await fetch('https://pbl2022-project-backend.herokuapp.com/entrepreneur', {
-                method: 'post',
-                body: JSON.stringify({name, phone, email, password}),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
+        const body = {
+            name: credentials.name,
+            phone: credentials.phone,
+            email: credentials.email,
+            password: credentials.password,
         }
-        else {
-            result = await fetch('https://pbl2022-project-backend.herokuapp.com/investor', {
-                method: 'post',
-                body: JSON.stringify({name, phone, email, password}),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-        }
-        console.log(result.status);
+        const result = await axios.post(`https://pbl2022-project-backend.herokuapp.com/${credentials.usertype}`, body);
+        
         if(result.status === 201){
-            result = await result.json();
             let user = {
-                name: result[credentials.usertype].name,
-                token: result.token, 
+                token: result.data.token, 
                 usertype: credentials.usertype
             };
             console.log(user);

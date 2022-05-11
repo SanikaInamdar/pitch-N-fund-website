@@ -64,13 +64,14 @@ function Card(props) {
                     <p className="card-text">Ask : {props.askprice}</p>
                     <p className="card-text">Equity : {props.equity.toFixed(2)}%</p>
                     <p className="card-text">Sector : {props.sector}</p>
+                    {props.investorsNostatus ? (<p className="card-text">Investors : {props.investorNo}</p>) : (<></>)}
                     {props.buttonstatus ? (<div className="button-container">
                         <button className="btn btn-primary button" onClick={handleClick}>Invest</button>
                     </div>) : (<div></div>)}
                 </div>
                 <div className="chart-container">
                     <Graph equity={props.equity}/>
-                    {props.namestatus ? (<p className="card-text"> ~ {props.ownername}</p>) : (<></>)}
+                    {props.ownernamestatus ? (<p className="card-text"> ~ {props.ownername}</p>) : (<></>)}
                 </div>
             </div>
         </div>

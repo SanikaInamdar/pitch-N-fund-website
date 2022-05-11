@@ -25,10 +25,13 @@ const Myprojects = () => {
     useEffect(() => {
         fetchData()
     }, [])
+
+    console.log(data);
+
     return (
         <Layout>
             <section id="cardsSection">
-                {data ? data.map((element, key) => <Card key={key} id={element._id} name={element.name} description={element.description} askprice={element.askingPrice} equity={(element.equity) * 100} sector={element.sector} ownername={element.ownerName} buttonstatus={0} namestatus={0}/>) : alert("No Project")}
+                {data ? data.map((element, key) => <Card key={key} id={element._id} name={element.name} description={element.description} askprice={element.askingPrice} equity={(element.equity) * 100} sector={element.sector} investorNo={element.investorDetails.length} investorsNostatus={1}/>) : alert("No Project")}
             </section>
         </Layout>
     )

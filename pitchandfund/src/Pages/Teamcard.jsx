@@ -1,6 +1,4 @@
 import React from "react";
-// import Sanika from "../Assets/Images/Sanika.png";
-// import Vinayak from "../Assets/Images/Vinayak.png";
 
 function Teamcard(props) {
 

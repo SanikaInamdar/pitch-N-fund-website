@@ -16,7 +16,7 @@ function Marketplace() {
     return (
         <Layout>
             <section id="cardsSection">
-                {data ? data.map((element, key) => <Card key={key} id={element._id} name={element.name} description={element.description} askprice={element.askingPrice} equity={(element.equity)*100} sector={element.sector} ownername={element.ownerName} buttonstatus={1} namestatus={1}/>): alert("No Projects")}
+                {data ? data.map((element, key) => <Card key={key} id={element._id} name={element.name} description={element.description} askprice={element.askingPrice} equity={(element.equity)*100} sector={element.sector} ownername={element.ownerName} buttonstatus={1} ownernamestatus={1}/>): alert("No Projects")}
             </section>
         </Layout>
     );

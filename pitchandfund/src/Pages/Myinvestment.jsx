@@ -28,7 +28,7 @@ const Myinvestment = () => {
     return (
         <Layout>
             <section id="cardsSection">
-                {data ? data.map((element, key) => <Card key={key} id={element.project._id} name={element.project.name} description={element.project.description} askprice={element.amount} equity={(element.equity) * 100} sector={element.project.sector} ownername={element.project.ownerName} buttonstatus={0} namestatus={1}/>) : alert("No Project")}
+                {data ? data.map((element, key) => <Card key={key} id={element.project._id} name={element.project.name} description={element.project.description} askprice={element.amount} equity={(element.equity) * 100} sector={element.project.sector} ownername={element.project.ownerName} ownernamestatus={1}/>) : alert("No Project")}
             </section>
         </Layout>
     )

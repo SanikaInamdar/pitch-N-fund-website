@@ -1,12 +1,15 @@
+#profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .profile-container {
     width: 70%;
-    /* background-color: #e6eaed; */
     margin: auto;
-    top: 5%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 5%;
+    height: 72%;
+    padding: 3%;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -69,6 +72,6 @@
 
     .profile-container {
         width: 90%;
-        height: 90%;
+        height: 65%;
     }
 }

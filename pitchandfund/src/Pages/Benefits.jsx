@@ -12,7 +12,7 @@ function Benefits() {
                 </div>
                 <div className="col-lg-3 col-md-6 benefit-box">
                     <i className="fa-solid fa-hand-holding-dollar benefit-icon"></i>
-                    <h3 className="benefit-subheading">Grow Revenue</h3>
+                    <h3 className="benefit-subheading">Grow<br/> Revenue</h3>
                     <p className="benefit-p">Raise capital by pitching your business models and gain control over company valuation by equity funding.</p>
                 </div>
                 <div className="col-lg-3 col-md-6 benefit-box">
@@ -22,7 +22,7 @@ function Benefits() {
                 </div>
                 <div className="col-lg-3 col-md-6 benefit-box">
                     <i className="fa-solid fa-circle-check benefit-icon"></i>
-                    <h3 className="benefit-subheading">Easy and efficient</h3>
+                    <h3 className="benefit-subheading">Easy and<br/> efficient</h3>
                     <p className="benefit-p">Join us for an easy and convenient business fundraising and investing workflow.</p>
                 </div>
             </div>

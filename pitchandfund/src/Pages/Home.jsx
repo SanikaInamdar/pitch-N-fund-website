@@ -10,8 +10,11 @@ function Home() {
     return (
         <Layout>
             <Title />
+            <hr className="home_hr"/>
             <Process />
+            <hr className="home_hr hr_margin"/>
             <Benefits />
+            <hr className="home_hr hr_margin_top"/>
             <Team />
             <Footer />
         </Layout>

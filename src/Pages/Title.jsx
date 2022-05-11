@@ -1,5 +1,5 @@
 import React from "react";
-import Business from "../Assets/Images/business.png";
+import Business from "../Assets/Images/Business.png";
 
 function Title() {
 

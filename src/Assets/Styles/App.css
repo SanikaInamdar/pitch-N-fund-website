@@ -19,7 +19,7 @@
     background-color: #ffffff;
     padding-left: 0;
     padding-right: 0;
-    background-image: url("../Images/background.jpg");
+    background-image: url("../Images/Background.jpg");
     min-height: 100vh;
   }
 
@@ -210,7 +210,7 @@
     left: 0;
     width: 24px;
     height: 24px;
-    background: center / contain no-repeat url(../Images/check.svg);
+    background: center / contain no-repeat url(../Images/Check.svg);
     border-radius: 100%;
   }
   

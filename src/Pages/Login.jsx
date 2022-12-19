@@ -36,7 +36,7 @@ function Login() {
             email: credentials.email,
             password: credentials.password
         }
-        const result = await axios.post(`https://pbl2022-project-backend.herokuapp.com/${credentials.usertype}/login`, body);
+        const result = await axios.post(`https://nodejs-backend-production.up.railway.app/${credentials.usertype}/login`, body);
 
         if(result.status === 200){
             let user = {

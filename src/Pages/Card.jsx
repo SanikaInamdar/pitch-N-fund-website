@@ -13,7 +13,7 @@ function Card(props) {
         {   
             const user = await JSON.parse(localStorage.getItem("user"));
             let token = user.token;
-            let response = await axios.get('https://pbl2022-project-backend.herokuapp.com/investor/me', {
+            let response = await axios.get('https://nodejs-backend-production.up.railway.app/investor/me', {
                 headers : {
                     Authorization: `Bearer ${token}`
                 }
@@ -34,7 +34,7 @@ function Card(props) {
                     project_id: props.id,
                     amount: parseInt(enteredCoins)
                 }
-                response = await axios.post('https://pbl2022-project-backend.herokuapp.com/investor/invest', body, {
+                response = await axios.post('https://nodejs-backend-production.up.railway.app/investor/invest', body, {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${token}`,

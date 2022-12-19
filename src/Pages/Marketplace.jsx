@@ -8,7 +8,7 @@ function Marketplace() {
     const [data , setData] = useState([]);
 
     useEffect(()=>{
-        axios.get("https://pbl2022-project-backend.herokuapp.com/projects")
+        axios.get("https://nodejs-backend-production.up.railway.app/projects")
         .then(response => setData(response.data))
         .catch(error=>console(error));
     } , []);

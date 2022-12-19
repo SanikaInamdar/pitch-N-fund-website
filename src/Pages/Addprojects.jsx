@@ -27,7 +27,7 @@ function Addprojects() {
             equity: parseInt(data.equity)/100,
             description: data.description
         }
-        await axios.post('https://pbl2022-project-backend.herokuapp.com/projects', body, {
+        await axios.post('https://nodejs-backend-production.up.railway.app/projects', body, {
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`

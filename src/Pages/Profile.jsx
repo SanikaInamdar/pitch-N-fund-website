@@ -9,7 +9,7 @@ function Profile() {
         const user = JSON.parse(localStorage.getItem("user"));
         let usertype = user.usertype;
         let token = user.token;
-        axios.get(`https://pbl2022-project-backend.herokuapp.com/${usertype}/me`, {
+        axios.get(`https://nodejs-backend-production.up.railway.app/${usertype}/me`, {
             headers: {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`

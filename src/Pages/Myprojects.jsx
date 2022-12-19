@@ -11,7 +11,7 @@ const Myprojects = () => {
         try {
             const user = await JSON.parse(localStorage.getItem("user"));
             const token = user.token;
-            const res = await axios.get("https://pbl2022-project-backend.herokuapp.com/entrepreneur/invested_details", {
+            const res = await axios.get("https://nodejs-backend-production.up.railway.app/entrepreneur/invested_details", {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`

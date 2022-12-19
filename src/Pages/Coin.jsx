@@ -23,7 +23,7 @@ function Coin() {
             const body = {
                 coins: parseInt(input[buttonName])
             }
-            axios.post(`https://pbl2022-project-backend.herokuapp.com/coins/${data.usertype}/${buttonName}`, body, {
+            axios.post(`https://nodejs-backend-production.up.railway.app/coins/${data.usertype}/${buttonName}`, body, {
                 headers: {
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${data.token}`
@@ -49,7 +49,7 @@ function Coin() {
         const user = JSON.parse(localStorage.getItem("user"));
         let usertype = user.usertype;
         let token = user.token;
-        axios.get(`https://pbl2022-project-backend.herokuapp.com/coins/${usertype}/balance`, {
+        axios.get(`https://nodejs-backend-production.up.railway.app/coins/${usertype}/balance`, {
             headers: {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`

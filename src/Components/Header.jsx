@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Hamburger from "../Assets/Images/Hamburger.svg";
+import Hamburger from "../Assets/Images/hamburger.svg";
 import Logo from "../Assets/Images/Logo.png";
 
 function Header() {
